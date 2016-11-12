@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="golfcard.js"></script>
+    <script src="https://use.fontawesome.com/1ffd46e16c.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div>
+        <div id="images">
+            <img id="golfbanner" src="images/golfbanner.jpg"/><br />
+            <img id="teeoff" src="images/teeoff.jpg" />
+            <img id="ballinhole" src="images/ballinthehole.jpg"/>
+        </div>
+        <div id="contact" class="contact empty">
+            <h3 id="coursename"></h3>
+            <h3 id="courseaddress"></h3>
+            <h3 id="courseaddress2"></h3>
+            <h3 id="coursenumber"></h3>
+            <h3 id="coursewebsite"></h3>
+        </div>
+        <div class="cardsetup">
+            <h3>Setup Your Golf Card</h3>
+            <label id="golf-course-label">Golf Course: </label><select id="courseselect" onchange="loadCourse(this.value)"><option value="0">Where are you golfing?</option></select>
+            <label id="tee-off-label">Tee: </label><select id="teetypes"><option value="0">Where do you want to tee off?</option></select>
+            <input id="playercount" type="text" placeholder="number of players" />
+            <a href="javascript: begincard()" class="btn btn-primary">go</a>
+        </div>
+        <div id="container" class="empty">
+            <div id="scorecontainer">
+                <div id="leftcard"></div>
+                <div class="course-info-container"></div>
+                <div id="rightcard"></div>
+            </div>
+            <div id="courseinfo">
+                <div id="totals">
+                    <div id="total-header">total</div>
+                    <div class="totals-border">
+                        <div id="par-total"></div>
+                        <div id="yardage-total">adfa</div>
+                        <div id="handicap-total">adfa</div>
+                    </div>
+                </div>
+                <div class="course-info-item">
+                    <div class="course-info-label">Par : </div>
+                    <div id="par-values" class="course-info-values"></div>
+                </div>
+                <div class="course-info-item">
+                    <div class="course-info-label">Yardage: </div>
+                    <div id="yardage-values" class="course-info-values"></div>
+                </div>
+                <div class="course-info-item">
+                    <div class="course-info-label">Handicap: </div>
+                    <div id="handicap-values" class="course-info-values"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

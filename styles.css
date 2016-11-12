@@ -1,0 +1,227 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url("images/Bunker-Hill-Green.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.empty {
+    display: none;
+}
+.contact {
+    background-color: #FFF;
+    border-radius: 4px;
+    width: 415px;
+    padding: 4px 0 15px 15px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#coursename {
+    margin-bottom: 15px;
+}
+#courseaddress {
+    margin-bottom: 15px;
+}
+#courseaddress2 {
+    margin-bottom: 15px;
+}
+#images {
+    margin: 50px auto 0 auto;
+}
+#golfbanner {
+    margin-bottom: 10px;
+    margin-left: 870px;
+}
+#teeoff {
+    width: 400px;
+    margin: 0 5px 0 929px;
+}
+#ballinhole {
+    width: 400px;
+}
+.cardsetup {
+    margin: 40px auto 0 auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #FFF;
+    /*position: absolute;*/
+    width: 80%;
+}
+.cardsetup label {
+    margin-right: 5px;
+}
+#courseinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 38px 38px 38px 38px;
+    width: 80%;
+    align-self: center;
+    background-color: #FFF;
+    border-radius: 4px;
+}
+.course-info-container {
+    display: flex;
+    flex-direction: column;
+}
+.course-info-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 175%;
+    margin-right: 6px;
+    margin-left: 0px;
+}
+.course-info-item {
+    display: flex;
+    flex-direction: row;
+    /*margin-right: 18px;*/
+    margin-top: 3px;
+    /*margin-left: 251px;*/
+    width: 71%;
+}
+.course-info-label {
+    display: flex;
+    width: 234px;
+    margin-left: 270px;
+    margin-right: 27px;
+}
+#totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 1165px;
+    left: 1250px;
+}
+#total-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#par-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*text-align: center;*/
+    margin-bottom: 2px;
+    padding: 3px 6px 0 6px;
+}
+#yardage-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*text-align: center;*/
+    margin-bottom: 3px;
+    padding: 0 6px;
+}
+#handicap-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*text-align: center;*/
+    padding: 0 6px 3px 6px;
+}
+.totals-border {
+    border: 1px solid black;
+}
+#scorecontainer {
+    width: 80%;
+    margin: 120px auto 0 auto;
+    border-radius: 4px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#leftcard {
+    width: 150px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 15px;
+    margin-left: 15px;
+    position: relative;
+    top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#leftcard div {
+    margin-bottom: 4px;
+}
+#par {
+    margin-top: 20px;
+    position: relative;
+    left: 148px;
+}
+#rightcard {
+    width: auto;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+}
+.playerlabels {
+    width: 93px;
+}
+.holcol {
+    margin-right: 5px;
+    width: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.removeicon {
+    color: red;
+    padding-top: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.fa-pencil-square-o {
+    color: #59ff48;
+    padding: 0 5px 0 5px;
+    position: relative;
+}
+#courseselect {
+    margin-bottom: 15px;
+}
+.holebox {
+    width: 29px;
+    text-align: center;
+    margin: 2px 0 7px 0;
+}
+.playerstyles {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+.parstyles, .yardagestyles, .handicapstyles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 29px;
+    text-align: center;
+}
+#strokescol {
+    margin-left: 11px;
+    margin-right: 15px;
+}
+#scorecol {
+    margin-left: 28px;
+}
+#outcol {
+    margin-left: 10px;
+    margin-right: 8px;
+}
+#incol {
+
+}
+#container {
+    margin-bottom: 100px;
+}
