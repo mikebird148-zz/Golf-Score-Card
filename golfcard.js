@@ -105,9 +105,15 @@ function removeplayer(theid) {
     }
 }
 
-function editname() {
-    $("#player" i).;
-}
+// function editname(theid) {
+//     $(".removeicon").click(function() {
+//         $("#playerlabel" + theid).hide();
+//         $("#leftcard").append("<form name='input' id='showform'><label for='nametobe'></label><input id='nametobe' type='text' name='yourname' placeholder='Enter your name.' /><input id='subinp' type='submit' value='submit' /></form>");
+//         $("#subinp").click(function() {
+//             $("#playerlabel" + theid).val();
+//         })
+//     });
+// }
 
 function calculatescore(playerid) {
     var thetotal = 0;
