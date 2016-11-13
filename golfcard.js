@@ -42,7 +42,7 @@ function begincard() {
     $("#leftcard").html("");
     $("#scorecontainer").css("display", "flex");
     for (var i = 1; i <= players; i++) {
-        $("#leftcard").append("<div id='playerlabel" + i +"' class='playerlabels'> Player " + i + " <span class='removeicon fa fa-pencil-square-o' aria-hidden='true' onclick='editname("+ i +")'></span><span class='removeicon fa fa-trash-o' aria-hidden='true' onclick='removeplayer("+ i +")'></span></div>");
+        $("#leftcard").append("<div id='playerlabel" + i +"' class='playerlabels'> Player " + i + " <span id='editicon' class='removeicon fa fa-pencil-square-o' aria-hidden='true' onclick='editname(" + i + ")'></span><span class='removeicon fa fa-trash-o' aria-hidden='true' onclick='removeplayer("+ i +")'></span></div>");
         totalboxes += "<div class='playerstyles' id='playertotal" + i + "'></div>";
     }
     for (var c = 1; c <= numberofholes; c++) {
@@ -54,6 +54,9 @@ function begincard() {
     $("#rightcard").append("<div id='strokescol' class='holcol'><div class='colheader'>strokes</div>" + totalboxes + "</div>");
     $("#rightcard").append("<div id='scorecol' class='holcol'><div class='colheader'>score</div>" + totalboxes + "</div>");
     buildholes();
+    $("#cardsetupbtn").click(function(){
+        $("#cardsetup").remove();
+    });
 }
 
 function buildholes() {
@@ -98,22 +101,23 @@ function parYardageHandicap() {
 //
 // }
 
+function editname(golferid) {
+    $("#playerlabel" + golferid).replaceWith("<form id='playerlabel" + golferid + "'><input id='nametobe' type='text' name='yourname' placeholder='Enter your name.' /><input id='submitname' type='submit' value='submit' /></form>");
+    // var theirname = $("#nametobe").keyup(function(){
+    //
+    // });
+    $("#submitname").click(function(){
+            $("#playerlabel" + golferid).replaceWith("<div id='playerlabel" + golferid + "' class='playerlabels'>" + theirname + "<span id='editicon' class='removeicon fa fa-pencil-square-o' aria-hidden='true' onclick='editname(" + golferid + ")'></span><span class='removeicon fa fa-trash-o' aria-hidden='true' onclick='removeplayer(" + golferid + ")'></span></div>");
+        }
+    );
+}
+
 function removeplayer(theid) {
     $("#playerlabel" + theid).remove();
     for (var i = 1; i <= numberofholes; i++) {
         $("#player" + theid + "hole" + i).remove();
     }
 }
-
-// function editname(theid) {
-//     $(".removeicon").click(function() {
-//         $("#playerlabel" + theid).hide();
-//         $("#leftcard").append("<form name='input' id='showform'><label for='nametobe'></label><input id='nametobe' type='text' name='yourname' placeholder='Enter your name.' /><input id='subinp' type='submit' value='submit' /></form>");
-//         $("#subinp").click(function() {
-//             $("#playerlabel" + theid).val();
-//         })
-//     });
-// }
 
 function calculatescore(playerid) {
     var thetotal = 0;

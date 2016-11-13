@@ -6,6 +6,11 @@ body {
     background: url("images/golfbridge.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+#initialpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .empty {
     display: none;
 }
@@ -28,7 +33,7 @@ body {
     margin-bottom: 15px;
 }
 #images {
-    margin: 50px auto 0 auto;
+    margin: 108px 108px 0 0;
 }
 #golfbanner {
     margin-bottom: 10px;
@@ -41,17 +46,53 @@ body {
 #ballinhole {
     width: 400px;
 }
-.cardsetup {
-    margin: 40px auto 0 auto;
-    height: auto;
-    padding: 15px;
+#cardsetup {
+    height: 331px;
     border-radius: 4px;
     background-color: #FFF;
-    /*position: absolute;*/
-    width: 80%;
+    position: absolute;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 225px;
+    left: 195px;
+}
+#cardsetuptitle {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 31px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 .cardsetup label {
     margin-right: 5px;
+    display: block;
+}
+#golf-course-label {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+#tee-off-label {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+#teetypes {
+    width: 215px;
+    margin-left: 106px;
+}
+#playercount {
+    width: 151px;
+    padding: 3px 0 3px 0;
+    text-align: center;
+    margin: 32px 0 0 103px;
+}
+#cardsetupbtn {
+    width: 51px;
+    margin: 26px auto 33px auto;
 }
 #courseinfo {
     display: flex;
@@ -192,7 +233,8 @@ body {
     position: relative;
 }
 #courseselect {
-    margin-bottom: 15px;
+    margin: 0 auto;
+    width: 263px;
 }
 .holebox {
     width: 29px;
