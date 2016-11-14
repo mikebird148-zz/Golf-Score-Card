@@ -17,14 +17,16 @@ body {
 .contact {
     background-color: #FFF;
     border-radius: 4px;
-    width: 415px;
-    padding: 4px 0 15px 15px;
+    height: 328px;
+    width: 464px;
+    padding: 4px 0 15px 96px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 226px;
+    left: 197px;
 }
 #coursename {
     margin-bottom: 15px;
+    margin-top: 48px;
 }
 #courseaddress {
     margin-bottom: 15px;
@@ -185,7 +187,7 @@ body {
     justify-content: space-between;
 }
 #leftcard {
-    width: 150px;
+    width: 213px;
     border-radius: 4px;
     background-color: white;
     padding: 15px;
@@ -198,6 +200,26 @@ body {
 }
 #leftcard div {
     margin-bottom: 4px;
+}
+#theirname {
+    width: 121px;
+    padding: 2px 0px 2px 5px;
+}
+#submitname {
+    width: 41px;
+    height: 22px;
+    margin-left: 8px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    display: inline-block;
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 #par {
     margin-top: 20px;
